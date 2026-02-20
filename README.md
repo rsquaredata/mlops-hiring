@@ -23,16 +23,26 @@ A simple end-to-end production-ready MLOps project for recruitment probability p
 
 </div>
 
-## Architecture
+## Architecture Overview
 
-```
-User
-  ↓
-Streamlit Frontend (HuggingFace Space)
-  ↓
-FastAPI Backend (HuggingFace Space)
-  ↓
-MongoDB Atlas (Cloud Database)
+```mermaid
+flowchart LR
+
+User["User"] --> Frontend["Streamlit Frontend<br>(HuggingFace Space)"]
+Frontend --> Backend["FastAPI Backend<br>(HuggingFace Space)"]
+Backend --> Model["Trained ML Model"]
+Backend --> Mongo["MongoDB Atlas<br>(Cloud Database)"]
+
+subgraph Local Development
+    Compose["Docker Compose"]
+    Server["FastAPI (local)"]
+    Client["Streamlit (local)"]
+    LocalMongo["Mongo Container"]
+end
+
+Compose --> Server
+Compose --> Client
+Compose --> LocalMongo
 ```
 
 ---
