@@ -16,6 +16,12 @@
 
 A simple end-to-end production-ready MLOps project for recruitment probability prediction.
 
+**Try the Live Demo 👇**
+
+[![Frontend Live](https://img.shields.io/badge/Frontend-Live%20Demo-blue?style=for-the-badge&logo=vercel)](https://rsquaredata-mlops-hiring-frontend.hf.space)
+
+[![Backend API](https://img.shields.io/badge/Backend-API-green?style=for-the-badge&logo=fastapi)](https://rsquaredata-mlops-hiring-backend.hf.space/docs)
+
 <br>
 <br>
 
@@ -23,9 +29,9 @@ A simple end-to-end production-ready MLOps project for recruitment probability p
 <br>
 <sup>"MLOps, MLOps everywhere"</sup>
 
----
-
 </div>
+
+---
 
 ## Full Architecture (Development & Production)
 
