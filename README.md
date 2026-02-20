@@ -124,7 +124,6 @@ Includes:
 - Dockerized microservices
 - MongoDB container
 - Full local orchestration
-- Published Python package for reusable ML utilities 
 
 ### Backend (Production API - HuggingFace Space)
 
