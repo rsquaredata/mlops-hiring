@@ -77,6 +77,28 @@ class Dataset,Training,ModelArtifact ml;
 
 ---
 
+## System Overview
+
+This project demonstrates a full MLOps pipeline deployed in production:
+
+- Model training
+- Backend API deployment
+- Frontend application
+- Cloud database
+- Secret management
+- CI/CD automation
+- Dockerized services
+
+### Production Architecture
+
+User → Streamlit (HF) → FastAPI (HF) → MongoDB Atlas
+
+### Dev Architecture
+
+Local Docker Compose for backend testing.
+
+---
+
 ## Repositories
 
 ### Core (local full-stack with Docker Compose)
