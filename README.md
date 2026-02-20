@@ -61,6 +61,18 @@ subgraph ML_Pipeline
     ModelArtifact --> BackendLocal
     ModelArtifact --> BackendHF
 end
+
+%% =========================
+%% STYLING
+%% =========================
+
+classDef prod fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+classDef dev fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
+classDef ml fill:#fff3e0,stroke:#ef6c00,stroke-width:2px;
+
+class FrontendHF,BackendHF,ModelHF,MongoAtlas prod;
+class DevUser,DockerCompose,BackendLocal,FrontendLocal,MongoLocal,ModelLocal dev;
+class Dataset,Training,ModelArtifact ml;
 ```
 
 ---
