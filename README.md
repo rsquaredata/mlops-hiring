@@ -1,12 +1,16 @@
 <div align="center">
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
-[![MLOps](https://img.shields.io/badge/MLOps-Full%20Stack-black.svg)]()
-[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688.svg)]()
-[![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-FF4B4B.svg)]()
-[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248.svg)]()
-[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED.svg)]()
-[![HuggingFace](https://img.shields.io/badge/Deployment-HF%20Spaces-yellow.svg)]()
+[![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-orange.svg)]()
+[![MLOps](https://img.shields.io/badge/MLOps-End--to--End-black.svg)]()
+[![FastAPI](https://img.shields.io/badge/API-FastAPI-009688.svg)]()
+[![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B.svg)]()
+[![Database](https://img.shields.io/badge/Database-MongoDB%20Atlas-47A248.svg)]()
+[![Docker](https://img.shields.io/badge/Docker-Containers-2496ED.svg)]()
+[![Docker Compose](https://img.shields.io/badge/Orchestration-Docker%20Compose-blue.svg)]()
+[![CI/CD](https://img.shields.io/badge/CI/CD-GitHub%20Actions-2088FF.svg)]()
+[![Cloud Deployment](https://img.shields.io/badge/Cloud-HuggingFace%20Spaces-yellow.svg)]()
+[![Architecture](https://img.shields.io/badge/Architecture-Microservices-grey.svg)]()
 
 # MLOps Hiring - Full Stack ML System
 
