@@ -23,26 +23,44 @@ A simple end-to-end production-ready MLOps project for recruitment probability p
 
 </div>
 
-## Architecture Overview
+## Full Architecture (Development & Production)
 
 ```mermaid
-flowchart LR
+flowchart TB
 
-User["User"] --> Frontend["Streamlit Frontend<br>(HuggingFace Space)"]
-Frontend --> Backend["FastAPI Backend<br>(HuggingFace Space)"]
-Backend --> Model["Trained ML Model"]
-Backend --> Mongo["MongoDB Atlas<br>(Cloud Database)"]
+%% =========================
+%% PRODUCTION
+%% =========================
 
-subgraph Local Development
-    Compose["Docker Compose"]
-    Server["FastAPI (local)"]
-    Client["Streamlit (local)"]
-    LocalMongo["Mongo Container"]
+subgraph Production
+    User["User"] --> FrontendHF["Streamlit Frontend<br>HuggingFace Space"]
+    FrontendHF --> BackendHF["FastAPI Backend<br>HuggingFace Space"]
+    BackendHF --> ModelHF["Trained ML Model"]
+    BackendHF --> MongoAtlas["MongoDB Atlas<br>Cloud Database"]
 end
 
-Compose --> Server
-Compose --> Client
-Compose --> LocalMongo
+%% =========================
+%% DEVELOPMENT
+%% =========================
+
+subgraph Development_Local
+    DevUser["Developer"] --> DockerCompose["Docker Compose"]
+    DockerCompose --> BackendLocal["FastAPI local"]
+    DockerCompose --> FrontendLocal["Streamlit local"]
+    DockerCompose --> MongoLocal["MongoDB Container"]
+    BackendLocal --> ModelLocal["Trained ML Model"]
+end
+
+%% =========================
+%% TRAINING
+%% =========================
+
+subgraph ML_Pipeline
+    Dataset["Recruitment Dataset"] --> Training["Model Training"]
+    Training --> ModelArtifact["model.pkl / scaler.pkl"]
+    ModelArtifact --> BackendLocal
+    ModelArtifact --> BackendHF
+end
 ```
 
 ---
