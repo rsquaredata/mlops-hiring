@@ -14,13 +14,15 @@
 
 # MLOps Hiring - Full Stack ML System
 
-A simple end-to-end production-ready MLOps project for recruitment probability prediction.
+A production-ready end-to-end MLOps system for recruitment probability prediction.
 
 **Try the Live Demo 👇**
 
-[![Frontend Live](https://img.shields.io/badge/Frontend-Live%20Demo-blue?style=for-the-badge&logo=vercel)](https://rsquaredata-mlops-hiring-frontend.hf.space)
+[![Frontend | Launch Demo](https://img.shields.io/badge/Frontend-Launch%20Demo-blue?style=for-the-badge)](https://rsquaredata-mlops-hiring-frontend.hf.space)
 
-[![Backend API](https://img.shields.io/badge/Backend-API-green?style=for-the-badge&logo=fastapi)](https://rsquaredata-mlops-hiring-backend.hf.space/docs)
+[![Backend | API Docs](https://img.shields.io/badge/Backend-API%20Docs-009688?style=for-the-badge)](https://rsquaredata-mlops-hiring-backend.hf.space/docs)
+
+[![Backend | Health Check](https://img.shields.io/badge/Backend-Health%20Check-success?style=for-the-badge)](https://rsquaredata-mlops-hiring-backend.hf.space)
 
 <br>
 <br>
@@ -91,33 +93,34 @@ class Dataset,Training,ModelArtifact ml;
 
 This project demonstrates a full MLOps pipeline deployed in production:
 
-- Model training
-- Backend API deployment
+- Model training pipeline
+- Containerized backend API
 - Frontend application
-- Cloud database
+- Cloud database logging
 - Secret management
 - CI/CD automation
-- Dockerized services
+- Multi-environment deployment
+- Health monitoring endpoint
 
-### Production Architecture
+### Production Flow
 
 User → Streamlit (HF) → FastAPI (HF) → MongoDB Atlas
 
-### Dev Architecture
+### Local Development
 
-Local Docker Compose for backend testing.
+Docker Compose for full-stack testing.
 
 ---
 
 ## Repositories
 
-### Core (local full-stack with Docker Compose)
+### Core (Local Full-Stack)
 
 https://github.com/rsquaredata/mlops-hiring-predictor
 
 Includes:
 
-- Model training
+- Model training pipeline
 - Dockerized microservices
 - MongoDB container
 - Full local orchestration
@@ -131,7 +134,8 @@ Includes:
 - FastAPI
 - Cloud MongoDB Atlas
 - Model inference endpoint
-- CORS enabled
+- Healthcheck endpoint
+- CORS configuration
 - Production Dockerfile
 
 ### Frontend (Production UI - HuggingFace Space)
@@ -142,28 +146,30 @@ Includes:
 
 - Streamlit interface
 - Remote API integration
-- Cloud deployment
+- Production deployment
 
 ---
 
 ## Tech Stack
 
-- Python
+- Python 3.12
+- Scikit-learn
 - FastAPI
 - Streamlit
 - MongoDB Atlas
 - Docker
 - Docker Compose
-- GitHub Container Registry
+- GitHub Actions
 - HuggingFace Spaces
 
 ---
 
 ## Features
 
-- ML model training
+- End-to-end ML pipeline
 - API-based inference
+- Production deployment
 - Cloud database logging
-- Containerized deployment
-- Multi-repository architecture
-- Full cloud hosting
+- Health monitoring endpoint
+- Containerized microservices
+- Full CI/CD workflow
